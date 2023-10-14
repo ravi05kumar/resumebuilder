@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container1{
+    background-color: rgb(117,117,117);
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.container2 {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(236,239,241);
+
+}
+
+.container3{
+    margin-top: 50px;
+    width:100%;
+    max-width: 900px;
+    background-color: rgb(189,189,189);
+    margin: auto;
+}
+
+.container4{
+    width:100%;
+    max-width: 900px; 
+    margin: auto;
+    float: right;
+}
+
+.container4 button{
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #ed2e4527;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    background-color: rgb(84,110,122);
+    color: #fff;
+    padding: 5px;
+    border: 1px solid rgb(84,110,122);
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black
+}
+textarea {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black
+}
+
+input[type="date"]{
+    padding: 10px;
+    border: 2px solid black
+}
+
+#resumePreview {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+input[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}

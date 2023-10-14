@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>Online Resume Builder</h1>
+    </div>
+    <div class="container2" >
+        <form id="resumeForm" target="_blank">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br><br>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" name="summary" rows="5"></textarea><br>
+
+            <label for="experience">Experience:</label>
+            <textarea id="experience" name="experience" rows="6"></textarea><br>
+
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" rows="7"></textarea><br>
+
+            <label for="skills">Technical Skills:</label>
+            <textarea id="skills" name="skills" rows="7"></textarea><br>
+
+            <label for="personal">Personal Details:</label><br><br>
+
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <br><label for="nation">Nationality:</label>
+            <input type="text" id="nation" name="nation" required><br>
+
+            <label for="address">Permanent Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea><br>
+
+            <label for="language">Language:</label>
+            <textarea id="language" name="language" rows="4"></textarea><br>
+
+            <label for="hobby">Hobbies:</label>
+            <textarea id="hobby" name="hobby" rows="4"></textarea><br>
+
+            <br><input type="submit" value="Generate Resume">
+
+
+        </form>
+    </div>
+    
+<div class="container3">
+    <div id="resumePreview">
+        <h2 id="previewName"></h2>
+        <p id="previewEmail"></p>
+        <p id="previewPhone"></p>
+        <h3>Summary</h3>
+        <p id="previewSummary"></p>
+        <h3>Experience</h3>
+        <p id="previewExperience"></p>
+        <h3>Education</h3>
+        <p id="previewEducation"></p>
+        <h3>Technical Skills</h3>
+        <p id="previewSkills"></p>
+        <h3>Personal Details:</h3>
+        <p id="previewPersonal"></p>
+        <h4>Date of Birth</h4>
+        <p id="previewDate"></p>
+        <h4>Nationality</h4>
+        <p id="previewNation"></p>
+        <h4>Permanent Address</h4>
+        <p id="previewAddress"></p>
+        <h4>Language</h4>
+        <p id="previewLanguage"></p>
+        <h4>Hobbies</h4>
+        <p id="previewHobby"></p>
+    </div>
+</div>  
+
+
+
+    <div class="container4">
+        <button onclick="print()">Print Resume</button>
+    </div>
+
+    
+    <script>
+        document.getElementById("resumeForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+    
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const summary = document.getElementById("summary").value;
+            const experience = document.getElementById("experience").value;
+            const education = document.getElementById("education").value;
+            const skills = document.getElementById("skills").value;
+            const date = document.getElementById("date").value;
+            const nation = document.getElementById("nation").value;
+            const address = document.getElementById("address").value;
+            const language = document.getElementById("language").value;
+            const hobby = document.getElementById("hobby").value;
+    
+            document.getElementById("previewName").textContent = name;
+            document.getElementById("previewEmail").textContent = email;
+            document.getElementById("previewPhone").textContent = phone;
+            document.getElementById("previewSummary").textContent = summary;
+            document.getElementById("previewExperience").textContent = experience;
+            document.getElementById("previewEducation").textContent = education;
+            document.getElementById("previewSkills").textContent = skills;
+            document.getElementById("previewDate").textContent = date;
+            document.getElementById("previewNation").textContent = nation;
+            document.getElementById("previewAddress").textContent = address;
+            document.getElementById("previewLanguage").textContent = language;
+            document.getElementById("previewHobby").textContent = hobby;
+    
+         });
+    </script>
+
+</body>
+</html>
